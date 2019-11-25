@@ -32,10 +32,11 @@ appropriate.
 .. _X-Plane 11 System Requirements: http://www.x-plane.com/kb/x-plane-11-system-requirements/
 
 If your X-Plane is a supported version, but not a supported release, please
-follow the official instructions for 
-`updating X-Plane 10 <https://www.x-plane.com/kb/updating-x-plane/>`_ or
-`updating X-Plane 11 <https://www.x-plane.com/kb/updating-x-plane-11/>` prior
-to installing XSquawkBox.
+follow the official instructions for `updating X-Plane 10`_ or 
+`updating X-Plane 11`_ prior to installing XSquawkBox.
+
+.. _updating X-Plane 10: https://www.x-plane.com/kb/updating-x-plane/
+.. _updating X-Plane 11: https://www.x-plane.com/kb/updating-x-plane-11/
 
 A note about macOS 10.15
 ^^^^^^^^^^^^^^^^^^^^^^^^
