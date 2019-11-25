@@ -43,12 +43,27 @@ A note about macOS 10.15
 
 Due to changes in the GateKeeper proection system, macOS 10.15 (Catalina) will
 not load the XSquawkBox plugin without you either:
+
 * Explicitly authorising the plugin to load after it has failed once
+
 * Disabling Gatekeeper completely
 
 This is a limitation currently created by Apple's changes in macOS 10.15 and how
 they affect existing software and consequentially, is outside of the ability of
 the XSquawkBox developers to remedy.
+
+Also note Laminar's position on macOS Catalina:
+
+    "If your X-Plane 11 setup is heavily enhanced with add-ons, you may want
+    to remain with Mojave."
+
+    -- From the X-Plane Knowledge-base Article, `macOS Catalina & X-Plane`_ - 2019 Nov 18
+
+.. _macOS Catalina & X-Plane: https://www.x-plane.com/kb/macos-catalina-x-plane/
+
+As macOS 10.15 isn't compatible with 32-bit applcations, and X-Plane 10's 
+support tools are 32-bit only, we cannot recommend you try to run XSquawkBox on
+macOS 10.15 with X-Plane 10 either.
 
 X-Plane Performance Requirements
 --------------------------------
