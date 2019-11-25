@@ -10,7 +10,8 @@ Welcome to XSquawkBox 2's documentation!
    :maxdepth: 2
    :caption: Contents:
 
-
+   introduction
+   license
 
 Indices and tables
 ==================
