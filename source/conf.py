@@ -20,7 +20,7 @@
 project = 'XSquawkBox 2'
 copyright = '2019, The XSquawkBox Team'
 author = 'The XSquawkBox Team'
-
+master_doc = 'index'
 
 # -- General configuration ---------------------------------------------------
 
