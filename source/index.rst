@@ -11,6 +11,8 @@ Welcome to XSquawkBox 2's documentation!
    :caption: Contents:
 
    introduction
+   getting-started
+   troubleshooting
    license
 
 Indices and tables
