@@ -74,7 +74,7 @@ cannot invest significant effort into trying to fix issues with them.
 Some OS Specific notes on this are below:
 
 macOS
-*****
+^^^^^
 
 Run the "Audio MIDI Setup" utility (usually in ``/Applications/Utilities``) and
 make sure the sampling rate for the device you want to use is set to 48KHz.
@@ -82,7 +82,7 @@ Devices set to 44.1KHz (and presumably lower) will not be recognised as
 compatible.
 
 Windows
-*******
+^^^^^^^
 
 5.1 Surround speaker sets that connect directly to your PC via 3 x 3.5mm jacks
 have been known to not work with some integrated motherboard audio.  If you
