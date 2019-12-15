@@ -16,7 +16,8 @@ System Requirements
 As of XSquawkBox 2.0beta3, XSquawkBox requires X-Plane 10.51+ or 11.36+ and one
 of:
 
- - An X-Plane supported Mac running OS X 10.9 or newer
+ - An X-Plane supported Mac running OS X 10.9 or newer.
+   (If you're using macOS 10.14 or 10.15, please see the compatibility note below).
  
  - A PC running an X-Plane supported version of 64-bit Windows with suitable 
    graphics hardware
@@ -38,20 +39,26 @@ follow the official instructions for `updating X-Plane 10`_ or
 .. _updating X-Plane 10: https://www.x-plane.com/kb/updating-x-plane/
 .. _updating X-Plane 11: https://www.x-plane.com/kb/updating-x-plane-11/
 
-A note about macOS 10.15
-^^^^^^^^^^^^^^^^^^^^^^^^
+A note about macOS 10.14 and newer
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Due to changes in the GateKeeper proection system, macOS 10.15 (Catalina) will
-not load the XSquawkBox plugin without you either:
+Our ability to support macOS 10.14 is highly limited, particularly with
+X-Plane 10, due to the introduction of the Audio permissions system.  If the
+issue cannot be reproduced on 10.15, we cannot support it at this time.
 
-* Explicitly authorising the plugin to load after it has failed once
+On macOS 10.15 (or newer), X-Plane 11.41 or newer is required for microphone 
+support to work at all.  Earlier versions do not have the correct entitlements
+set.
 
-* Disabling Gatekeeper completely
+.. NOTE::
 
-This is a limitation currently created by Apple's changes in macOS 10.15 and how
-they affect existing software and consequentially, is outside of the ability of
-the XSquawkBox developers to remedy.
+   Due to changes in the GateKeeper proection system, macOS 10.15 may refuse to 
+   load the XSquawkBox plugin unless you either:
 
+   * Explicitly authorise the plugin to load after it has failed once
+
+   * Disable Gatekeeper completely
+   
 Also note Laminar's position on macOS Catalina:
 
     "If your X-Plane 11 setup is heavily enhanced with add-ons, you may want
@@ -69,12 +76,9 @@ X-Plane Performance Requirements
 --------------------------------
 In addition to the basic requirements, you must configure your X-Plane to run in
 real-time, that is, to have a framerate safely exceeding 20 frames per second in
-all phases of operation.
-
-.. admonition:: Further Information
-
-   The 20 frames per second minimum `comes from X-Plane itself <https://www.x-plane.com/kb/the-simulators-measurement-of-time-is-slow/>`_
-   and is a consequence of it's design.
+all phases of operation.  The 20 frames per second minimum `comes from X-Plane 
+itself <https://www.x-plane.com/kb/the-simulators-measurement-of-time-is-slow/>`_
+and is a consequence of it's design.
 
 Laminar Software maintains documentation on how to set the rendering options
 correctly for 
@@ -173,6 +177,15 @@ should see a "XSquawkBox" menu item in the plugins menu.
 
 If the menu item is missing, please see the section on
 :ref:`troubleshooting plugin loading issues <troubleshooting-load>`
+
+Configuring your Operating System
+---------------------------------
+
+To ensure that XSquawkBox can acquire your microphone at the correct sampling
+rate, on Windows and macOS, it can be necessary to change the OS default
+capture settings.  Please refer to the section in troubleshooting on 
+:ref:`input visibility issues <troubleshooting-audio-devices>`.
+
 
 Configuring XSquawkBox
 ----------------------

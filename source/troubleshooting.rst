@@ -44,3 +44,68 @@ installation instructions as written, and you cannot find any information
 suggesting a known cause, submit a bug report on the XSquawkBox website, 
 including the contents of ``Log.txt`` in full.
 
+.. _troubleshooting-audio-devices:
+
+Can't see your input/output device
+==================================
+
+AFV-Native can only handle a specific subset of audio devices:
+
+All devices must support a 48Khz sampling rate, or have OS-provided resampling.
+
+In addition, input devices must be monaural or able to operate in a pure
+monaural mode.  Similarly, output devices must be monaural or stereo or able to 
+operate in a pure monaural or stereo mode.
+
+In addition, bluetooth connected headsets are not supported - they might work if
+they support the necessary sampling rate and capture modes, but the developers
+cannot invest significant effort into trying to fix issues with them.
+
+.. NOTE::
+
+   The limitation is largely borne from AFV-Native audio interface code, and if
+   you're a programmer, you can attempt to remedy the limitations there and 
+   submit a patch to the author/maintainer.
+   
+   Unfortunately, there's just too many possibilities, and the specific
+   requirements of AFV-Native are fairly specific - the author cannot easily
+   support every possibility on his own.
+
+Some OS Specific notes on this are below:
+
+macOS
+*****
+
+Run the "Audio MIDI Setup" utility (usually in ``/Applications/Utilities``) and
+make sure the sampling rate for the device you want to use is set to 48KHz.
+Devices set to 44.1KHz (and presumably lower) will not be recognised as 
+compatible.
+
+Windows
+*******
+
+5.1 Surround speaker sets that connect directly to your PC via 3 x 3.5mm jacks
+have been known to not work with some integrated motherboard audio.  If you
+really want to output the radio to the speakers, change your speaker layout to
+stereo.  This configuration is not recommended however - dedicated headsets work
+best for VATSIM radio communications.
+
+To force the default sampling rate for a device:
+
+ 1. Open Control Panel (not settings)
+
+ 2. Open the "Sound" control panel
+
+ 3. Click on recording tab
+
+ 4. For each device you want to be able to use as a microphone:
+
+    a. Locate the input on the device list and right click on it and select "Properties".
+
+    b. Click on the "Advanced Tab"
+
+    c. Make sure the "Default Format" is set to "48000Hz (DVD Quality)"
+
+    d. Click "OK" to close the device settings.
+
+ 5. Click "OK" to close the Sound control panel.
