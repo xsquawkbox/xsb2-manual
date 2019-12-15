@@ -52,6 +52,8 @@ Can't see your input/output device
 AFV-Native can only handle a specific subset of audio devices:
 
 All devices must support a 48Khz sampling rate, or have OS-provided resampling.
+This accounts for the majority of USB headsets and most integrated audio 
+devices.
 
 In addition, input devices must be monaural or able to operate in a pure
 monaural mode.  Similarly, output devices must be monaural or stereo or able to 
@@ -67,9 +69,9 @@ cannot invest significant effort into trying to fix issues with them.
    you're a programmer, you can attempt to remedy the limitations there and 
    submit a patch to the author/maintainer.
    
-   Unfortunately, there's just too many possibilities, and the specific
-   requirements of AFV-Native are fairly specific - the author cannot easily
-   support every possibility on his own.
+   Unfortunately, there's just too many possibilities, and the requirements 
+   from the AFV system itself are fairly specific - the author cannot support
+   every possibility on his own and has focused on the most common cases.
 
 Some OS Specific notes on this are below:
 
