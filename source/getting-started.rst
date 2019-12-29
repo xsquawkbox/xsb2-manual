@@ -42,13 +42,20 @@ follow the official instructions for `updating X-Plane 10`_ or
 A note about macOS 10.14 and newer
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Our ability to support macOS 10.14 is highly limited, particularly with
-X-Plane 10, due to the introduction of the Audio permissions system.  If the
-issue cannot be reproduced on 10.15, we cannot support it at this time.
+Our ability to support macOS 10.14 is highly limited due to the introduction of
+the Audio permissions system.  If the issue cannot be reproduced on 10.15, we
+cannot support it at this time.
 
-On macOS 10.15 (or newer), X-Plane 11.41 or newer is required for microphone 
-support to work at all.  Earlier versions do not have the correct entitlements
-set.
+Further, As macOS 10.15 isn't compatible with 32-bit applcations, and 
+X-Plane 10's support tools are 32-bit only, we cannot recommend you try to run
+XSquawkBox on macOS 10.15 with X-Plane 10 either.
+
+For this reason, X-Plane 10 is not supported on macOS 10.14 or 10.15 - we have
+made no efforts to prevent it from working, but we will not act on bug reports
+for X-Plane 10 related issues on these versions of macOS.
+
+On macOS 10.15 (or newer), X-Plane 11.41 (or newer) is **required** for 
+microphone support to work at all.
 
 .. NOTE::
 
@@ -67,10 +74,6 @@ Also note Laminar's position on macOS Catalina:
     -- From the X-Plane Knowledge-base Article, `macOS Catalina & X-Plane`_ - 2019 Nov 18
 
 .. _macOS Catalina & X-Plane: https://www.x-plane.com/kb/macos-catalina-x-plane/
-
-As macOS 10.15 isn't compatible with 32-bit applcations, and X-Plane 10's 
-support tools are 32-bit only, we cannot recommend you try to run XSquawkBox on
-macOS 10.15 with X-Plane 10 either.
 
 X-Plane Performance Requirements
 --------------------------------

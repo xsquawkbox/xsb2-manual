@@ -13,6 +13,7 @@ Welcome to XSquawkBox 2's documentation!
    introduction
    getting-started
    troubleshooting
+   technical-notes
    license
 
 Indices and tables
