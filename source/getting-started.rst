@@ -191,7 +191,7 @@ capture settings.  Please refer to the section in troubleshooting on
 
 
 Configuring XSquawkBox
-----------------------
+======================
 
 .. TIP::
 
@@ -200,4 +200,140 @@ Configuring XSquawkBox
    Even if you have previous experience with XSquawkBox, it is highly 
    recommended you work through this section to ensure your key and button
    bindings are all set appropriately.
+
+Configuring the keyboard commands
+---------------------------------
+
+Unlike previous releases of XSquawkBox, XSquawkBox 2.0 uses the X-Plane keyboard
+and joystick binding system for its commands.
+
+If you are not familiar with how to set up keyboard bindings in X-Plane, you can
+refer to the manual for 
+`X-Plane 10 <https://www.x-plane.com/manuals/desktop/10/index.html#configuringkeyboardshortcuts>`_ and
+`X-Plane 11 <https://www.x-plane.com/manuals/desktop/index.html#configuringkeyboardshortcuts>`_ .
+
+The commands available are detailed below:
+
++-------------------------------------------+------------------------------------+------------------------------------------------+
+| Command Name                              | Display Name (X-Plane 11)          | Purpose                                        |
++===========================================+====================================+================================================+
+| ``xsquawkbox/voice/ptt``                  | XSB: Radio Press-to-Talk           | Use to send on the selected radio              |
++-------------------------------------------+------------------------------------+------------------------------------------------+
+| ``xsquawkbox/command/start_text_entry``   | XSB: Start Text Entry              | Use to activate the input prompt for text      |
+|                                           |                                    | commands and text radio                        |
++-------------------------------------------+------------------------------------+------------------------------------------------+
+| ``xsquawkbox/command/toggle_text_window`` | XSB: Toggle Text Window Visibility | Toggles visibility of the text radio/command   |
+|                                           |                                    | window                                         |
++-------------------------------------------+------------------------------------+------------------------------------------------+
+| ``xsquawkbox/text/prevpage``              | XSB: Text Window: Previous Page    | Scrolls the text window back one line          |
++-------------------------------------------+------------------------------------+------------------------------------------------+
+| ``xsquawkbox/text/nextpage``              | XSB: Text Window: Next Page        | Scrolls the text window forward one line       |
++-------------------------------------------+------------------------------------+------------------------------------------------+
+| ``xsquawkbox/text/start``                 | XSB: Text Window: Scroll to Start  | Scrolls the text window to the earliest line   |
++-------------------------------------------+------------------------------------+------------------------------------------------+
+| ``xsquawkbox/text/end``                   | XSB: Text Window: Scroll to End    | Scrolls the text window to the latest line     |
++-------------------------------------------+------------------------------------+------------------------------------------------+
+| ``xsquawkbox/command/reply_next``         | XSB: Reply to Last Sender          | Starts a reply to the person who last sent you |
+|                                           |                                    | a ``.msg`` - subsequent presses cycle through  |
+|                                           |                                    | recent senders                                 |
++-------------------------------------------+------------------------------------+------------------------------------------------+
+| ``xsquawkbox/command/toggle_whos_online`` | XSB: Toggle Who's Online           | Toggles visibility of the Who's Online window  |
++-------------------------------------------+------------------------------------+------------------------------------------------+
+
+.. NOTE::
+
+   You must bind the Press to talk and Start Text Entry commands to use
+   XSquawkBox - you will not be able to interact with the network properly
+   without them
+
+.. TIP:: 
+
+   It is highly recommended you bind the `Toggle Text Visibility` and the text 
+   window scroll commands.
+
+Recommending Bindings for First-time Users
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+* Bind ``xsquawkbox/command/start_text_entry`` (“XSB: Start Text Entry” in X-Plane
+  11) to Enter and/or Space.
+
+* Bind ``xsquawkbox/voice/ptt`` (“XSB: Radio Press-to-Talk” in X-Plane 11) to the
+  joystick button and/or keyboard keys you want to use as your Radio PTT.
+
+* Bind ``xsquawkbox/command/toggle_text_window`` ("XSB: Toggle Text Window 
+  Visibility" in X-Plane 11) to Keypad - (minus).
+
+* Bind ``xsquawkbox/text/prevpage`` ("XSB: Text Window: Previous Page" in 
+  X-Plane 11) to Page Up.
+
+* Bind ``xsquawkbox/text/nextpage`` ("XSB: Text Window: Next Page" in 
+  X-Plane 11) to Page Down.
+
+* Bind ``xsquawkbox/text/start`` ("XSB: Text Window: Scroll to Start" in X-Plane
+  11) to Home.
+
+* Bind ``xsquawkbox/text/end`` ("XSB: Text Window: Scroll to End" in X-Plane 11)
+  to End.
+
+* Bind ``xsquawkbox/command/reply_next`` ("XSB: Reply to Last Sender" in X-Plane
+  11) to Keypad *
+
+* Bind ``xsquawkbox/command/toggle_whos_online`` ("XSB: Toggle Who's Online" in
+  X-Plane 11) to Keypad /
+
+================
+Using XSquawkBox
+================
+
+Using the Radio
+---------------
+
+XSquawkBox 2 now makes full use of audio panel controls and fully supports 
+sending and receiving on both radios, both in text and using voice.
+
+Transmissions (both voice and text) will be sent to the selected 
+transmission radio.
+
+Voice will only be heard for radios with Receive enabled and the volume turned
+up.
+
+To accomodate this, you need to be familiar with the audio panel controls in 
+your chosen aircraft model, in particular, the controls for audio volume, 
+transmission source, and receive channel enable.
+
+
+General Aviation Aircraft
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Audio controls will typically be found center of the instrument panel and will
+be divided into a dedicated audio control panel which selects the receive 
+channels and transmission channel, and the radios or GPS units, which will have
+the volume control for that source.
+
+
+Airliners
+^^^^^^^^^
+
+Audio controls (for the captain / left-seat) will typically be on the pedestal
+immediately, or to the forward left of the captain's seat.  This is typically
+mirrored for the right set.
+
+The audio panel will typically control volume, output enable and transmission 
+source selection all in one place.
+
+
+Aircraft without a working audio panel
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+If your aircraft model doesn’t have a working transmission selector, you can use
+the ``.tx ?`` command to find out which radio is set to transmit, and use the 
+``.tx COM1`` or ``.tx COM2`` commands to change the active radio to send.
+
+Similarly, if your aircraft model’s audio panel doesn’t have proper receive 
+select controls you can use ``.rx COM1 on`` and ``.rx COM1 off`` (and similarly
+for COM2) to turn that audio source on and off.
+
+
+
+
 
