@@ -16,7 +16,7 @@ System Requirements
 As of XSquawkBox 2.0, XSquawkBox requires X-Plane 10.51+ or 11.36+ and one
 of:
 
- - An X-Plane supported Mac running macOS 10.9 or newer.
+ - An X-Plane supported Mac running macOS 10.12 or newer.
    (If you're using macOS 10.14 or 10.15, please see the compatibility note below).
  
  - A PC running an X-Plane supported version of 64-bit Windows with suitable 
