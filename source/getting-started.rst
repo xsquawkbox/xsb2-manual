@@ -257,8 +257,9 @@ Recommending Bindings for First-time Users
 * Bind ``xsquawkbox/command/start_text_entry`` (“XSB: Start Text Entry” in X-Plane
   11) to Enter and/or Space.
 
-* Bind ``xsquawkbox/voice/ptt`` (“XSB: Radio Press-to-Talk” in X-Plane 11) to the
-  joystick button and/or keyboard keys you want to use as your Radio PTT.
+* Bind ``xsquawkbox/voice/ptt`` (“XSB: Radio Press-to-Talk” in X-Plane 11) to a
+  joystick/yoke button that is easily accessible - usually a trigger or thumb
+  button if you want an authentic position.
 
 * Bind ``xsquawkbox/command/toggle_text_window`` ("XSB: Toggle Text Window 
   Visibility" in X-Plane 11) to Keypad - (minus).
@@ -281,15 +282,17 @@ Recommending Bindings for First-time Users
 * Bind ``xsquawkbox/command/toggle_whos_online`` ("XSB: Toggle Who's Online" in
   X-Plane 11) to Keypad /
 
-================
+
 Using XSquawkBox
 ================
 
 Using the Radio
 ---------------
 
-XSquawkBox 2 now makes full use of audio panel controls and fully supports 
-sending and receiving on both radios, both in text and using voice.
+Unlike XSquawkbox 1, which could only send and receive text on COM1, and could 
+only transmit voice on COM1, XSquawkBox 2 makes full use of audio panel controls
+and fully supports sending and receiving on both radios, both in text and using
+voice.
 
 Transmissions (both voice and text) will be sent to the selected 
 transmission radio.
@@ -301,15 +304,23 @@ To accomodate this, you need to be familiar with the audio panel controls in
 your chosen aircraft model, in particular, the controls for audio volume, 
 transmission source, and receive channel enable.
 
+.. NOTE::
+
+   Not all aircraft models expose all controls properly.  Please see the note
+   at the end of this section on how to control XSB if the controls aren't
+   available.
 
 General Aviation Aircraft
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Audio controls will typically be found center of the instrument panel and will
 be divided into a dedicated audio control panel which selects the receive 
-channels and transmission channel, and the radios or GPS units, which will have
-the volume control for that source.
+channels and transmission channel, and the radios or GPS units, which should
+have the volume control for that source.
 
+.. figure:: images/ConventionalGA-AudioPanel.jpg
+  
+  X-Plane 11 audio controls in the Cessna 172 (Center of Main Instrument Panel)
 
 Airliners
 ^^^^^^^^^
@@ -318,9 +329,19 @@ Audio controls (for the captain / left-seat) will typically be on the pedestal
 immediately, or to the forward left of the captain's seat.  This is typically
 mirrored for the right set.
 
+.. NOTE::
+
+   XSquawkBox only supports control through the standard datarefs which allow
+   for a single position and audio system only.  If your aircraft model connects
+   the copilot controls to it's own set of datarefs, you will not be able to 
+   control XSB's audio with those controls.
+
 The audio panel will typically control volume, output enable and transmission 
 source selection all in one place.
 
+.. figure:: images/Airliner-AudioPanel.jpg
+
+  X-Plane 11 audio controls in the Boeing 747-400 (Center Pedestal)
 
 Aircraft without a working audio panel
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
