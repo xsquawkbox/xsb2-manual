@@ -77,10 +77,10 @@ Also note Laminar's position on macOS Catalina:
 
 X-Plane Performance Requirements
 --------------------------------
-In addition to the basic requirements, you must configure your X-Plane to run in
-real-time, that is, to have a framerate safely exceeding 20 frames per second in
-all phases of operation.  The 20 frames per second minimum `comes from X-Plane 
-itself <https://www.x-plane.com/kb/the-simulators-measurement-of-time-is-slow/>`_
+In addition to the basic requirements, you must configure your X-Plane
+installation to run in real-time, that is, to have a framerate safely exceeding
+20 frames per second in all phases of operation.  The 20 frames per second
+minimum `comes from X-Plane itself <https://www.x-plane.com/kb/the-simulators-measurement-of-time-is-slow/>`_
 and is a consequence of it's design.
 
 Laminar Software maintains documentation on how to set the rendering options
@@ -88,6 +88,9 @@ correctly for
 `X-Plane 10 <https://www.x-plane.com/kb/setting-the-rendering-options-for-best-performance/>`_
 and for
 `X-Plane 11 <https://www.x-plane.com/manuals/desktop/#settingtherenderingoptionsforbestperformance>`_.
+
+In multi-system X-Plane setups, this restriction only applies to the system 
+running the flight model.
 
 .. WARNING::
 
