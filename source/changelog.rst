@@ -4,8 +4,8 @@ XSquawkBox 2.0 Changelog
 For updates before 2.0, please refer to the README file included with the 
 release
 
-WHAT'S NEW FOR THE 2.0 beta 6 RELEASE (2020-02-xx)
-==================================================
+2.0 beta 6 (2020-02-xx)
+=======================
 
  * Alas, another beta due to the two bugs (one major) dealt with in this
    release.
@@ -29,8 +29,8 @@ WHAT'S NEW FOR THE 2.0 beta 6 RELEASE (2020-02-xx)
      inbetween creating the radio simulation state, and the first network
      update.  (Cosmetic only)
 
-WHAT'S NEW FOR THE 2.0 beta 5 RELEASE (2020-02-01)
-==================================================
+2.0 beta 5 (2020-02-01)
+=======================
 
  * We do not perform time dilation detection for external flight model and
    OBS users anymore.  These restrictions were more from oversight than
@@ -64,8 +64,8 @@ WHAT'S NEW FOR THE 2.0 beta 5 RELEASE (2020-02-01)
 
  * Updated to AFV-Native 0.9.4 (build-chain and dependency version updates only)
 
-WHAT'S NEW FOR 2.0 beta 4 RELEASE (2019-12-29)
-==============================================
+2.0 beta 4 (2019-12-29)
+=======================
 
  * Made the volume controls work more naturally (volume reduction sounds more
    gradual making the volume control significantly more useful)
@@ -86,8 +86,8 @@ WHAT'S NEW FOR 2.0 beta 4 RELEASE (2019-12-29)
  * Expose voice stack debugging information via dataref so we can chart it
    and determine if certain things are behaving correctly.
 
-WHAT'S NEW FOR 2.0 beta 3 RELEASE (2019-11-28)
-==============================================
+2.0 beta 3 (2019-11-28)
+=======================
 
  * Due to changes in AFV-Native, we no longer assume default devices are known.
    If you haven't selected an audio device, and audio is enabled, you'll get an
@@ -113,8 +113,8 @@ WHAT'S NEW FOR 2.0 beta 3 RELEASE (2019-11-28)
  * AFV-Native's logging now comes through XSB into the X-Plane logs - one less
    logfile.
 
-WHAT'S NEW FOR 2.0 beta 2 RELEASE (2019-11-05)
-==============================================
+2.0 beta 2 (2019-11-05)
+=======================
 
  * Fixed a logic inversion that prevented the text-radio from working.
 
@@ -129,8 +129,8 @@ WHAT'S NEW FOR 2.0 beta 2 RELEASE (2019-11-05)
  * Attempted to fix the MacOS minimum required version and get it back down
    to 10.9, rather than 10.13.
 
-WHAT'S NEW FOR 2.0 beta 1 RELEASE (2019-11-01)
-==============================================
+2.0 beta 1 (2019-11-01)
+=======================
 
  * Integrated AFV-Native to support the new VATSIM Audio Platform.  The
    AFV implementation (AFV-Native) and its integration represents 1-month of
