@@ -13,6 +13,7 @@ This manual is current as of 2.0 beta 6
    :caption: Contents:
 
    introduction
+   changelog
    getting-started
    using-xsquawkbox
    tuning-xplane
