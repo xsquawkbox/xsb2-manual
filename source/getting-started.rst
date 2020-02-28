@@ -80,26 +80,8 @@ For this reason, XSquawkBox is unsupported with X-Plane 10 on macOS 10.14 or
 on bug reports for X-Plane 10 related issues on these versions of macOS.
 
 On macOS 10.15 (or newer), X-Plane 11.41 (or newer) is **required** for 
-microphone support to work at all.  All versions of X-Plane prior to 11.41
+microphone support to work at all.  All versions of X-Plane 11 prior to 11.41
 are incompatible when used on macOS 10.14 or 10.15.
-
-.. NOTE::
-
-   Due to changes in the GateKeeper proection system, macOS 10.15 may refuse to 
-   load the XSquawkBox plugin unless you either:
-
-   * Explicitly authorise the plugin to load after it has failed once
-
-   * Disable Gatekeeper completely
-   
-Also note Laminar's position on macOS Catalina:
-
-    "If your X-Plane 11 setup is heavily enhanced with add-ons, you may want
-    to remain with Mojave."
-
-    -- From the X-Plane Knowledge-base Article, `macOS Catalina & X-Plane`_ - 2019 Nov 18
-
-.. _macOS Catalina & X-Plane: https://www.x-plane.com/kb/macos-catalina-x-plane/
 
 X-Plane Performance Requirements
 --------------------------------
