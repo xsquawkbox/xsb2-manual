@@ -7,6 +7,9 @@ release
 WHAT'S NEW FOR THE 2.0 beta 6 RELEASE (2020-02-xx)
 ==================================================
 
+ * Alas, another beta due to the two bugs (one major) dealt with in this
+   release.
+
  * Fixed a bug in the HF frequency aliasing where we weren't correcting the
    frequency scale (KHz vs Hz) during the lookup.  Oceanic should now work with
    voice.
