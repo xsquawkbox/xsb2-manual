@@ -10,6 +10,26 @@ installation and ensure your system meets the requirements.
 Also, if you haven't already done so, you should read through the VATSIM
 terms & conditions, and register yourself an account.
 
+On System Support
+-----------------
+
+In this manual, we'll use two terms - "support" and "compatibility" - when
+talking about requirements and interoperability.
+
+Support reflects our ability to accomodate issues - if something is supported,
+we will try to fix it once we have enough information on how to address the 
+issue.  If it's not supported, we're not saying that it can't work - we're just
+saying that if it doesn't work, we won't invest effort into making it work.
+
+Compatibility reflects if the components can or can't work together.  If we
+state something is compatible, we expect it to work.  If it's compatible and 
+supported, we will actively endevour to correct any issues preventing it from 
+working.  If we state that it is incompatible, then we expect that the 
+components will not work together.
+
+Please do not report issues that relate to things that are clearly noted
+as being unsupported or incompatible.
+
 System Requirements
 -------------------
 
@@ -39,6 +59,11 @@ follow the official instructions for `updating X-Plane 10`_ or
 .. _updating X-Plane 10: https://www.x-plane.com/kb/updating-x-plane/
 .. _updating X-Plane 11: https://www.x-plane.com/kb/updating-x-plane-11/
 
+Versions of X-Plane older than the versions stated above are incompatible.
+
+XSquawkBox 2.0 is unsupported with the upcoming Vulkan renderer.  (A future
+version of XSquawkBox will address this).
+
 A note about macOS 10.14 and newer
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -50,12 +75,13 @@ Further, As macOS 10.15 isn't compatible with 32-bit applcations, and
 X-Plane 10's support tools are 32-bit only, we cannot recommend you try to run
 XSquawkBox on macOS 10.15 with X-Plane 10 either.
 
-For this reason, X-Plane 10 is not supported on macOS 10.14 or 10.15 - we have
-made no efforts to prevent it from working, but we will not act on bug reports
-for X-Plane 10 related issues on these versions of macOS.
+For this reason, XSquawkBox is unsupported with X-Plane 10 on macOS 10.14 or
+10.15 - we have made no efforts to prevent it from working, but we will not act
+on bug reports for X-Plane 10 related issues on these versions of macOS.
 
 On macOS 10.15 (or newer), X-Plane 11.41 (or newer) is **required** for 
-microphone support to work at all.
+microphone support to work at all.  All versions of X-Plane prior to 11.41
+are incompatible when used on macOS 10.14 or 10.15.
 
 .. NOTE::
 
@@ -149,14 +175,12 @@ Plugins that are known or assumed to cause related conflicts are:
 
 .. admonition:: Further Information
 
-   XSquawkBox does not and will not support the concurrent injection of traffic
-   from multiple sources.
+   The injection of traffic from multiple source is not supported by XSquawkBox
+   and never will be.
 
    Such behaviour, if permitted, would create severe difficulties for
    controllers in sequencing and separating you as they would have to account
    for "phantom" aircraft they cannot see.
-   
-   Do not contact the developers about this.
 
 Installing XSquawkBox
 =====================
@@ -285,79 +309,5 @@ Recommending Bindings for First-time Users
 * Bind ``xsquawkbox/command/toggle_whos_online`` ("XSB: Toggle Who's Online" in
   X-Plane 11) to Keypad /
 
-
-Using XSquawkBox
-================
-
-Using the Radio
----------------
-
-Unlike XSquawkbox 1, which could only send and receive text on COM1, and could 
-only transmit voice on COM1, XSquawkBox 2 makes full use of audio panel controls
-and fully supports sending and receiving on both radios, both in text and using
-voice.
-
-Transmissions (both voice and text) will be sent to the selected 
-transmission radio.
-
-Voice will only be heard for radios with Receive enabled and the volume turned
-up.
-
-To accomodate this, you need to be familiar with the audio panel controls in 
-your chosen aircraft model, in particular, the controls for audio volume, 
-transmission source, and receive channel enable.
-
-.. NOTE::
-
-   Not all aircraft models expose all controls properly.  Please see the note
-   at the end of this section on how to control XSB if the controls aren't
-   available.
-
-General Aviation Aircraft
-^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Audio controls will typically be found center of the instrument panel and will
-be divided into a dedicated audio control panel which selects the receive 
-channels and transmission channel, and the radios or GPS units, which should
-have the volume control for that source.
-
-.. figure:: images/ConventionalGA-AudioPanel.jpg
-  
-  X-Plane 11 audio controls in the Cessna 172 (Center of Main Instrument Panel)
-
-Airliners
-^^^^^^^^^
-
-Audio controls (for the captain / left-seat) will typically be on the pedestal
-immediately, or to the forward left of the captain's seat.  This is typically
-mirrored for the right set.
-
-.. NOTE::
-
-   XSquawkBox only supports control through the standard datarefs which allow
-   for a single position and audio system only.  If your aircraft model connects
-   the copilot controls to it's own set of datarefs, you will not be able to 
-   control XSB's audio with those controls.
-
-The audio panel will typically control volume, output enable and transmission 
-source selection all in one place.
-
-.. figure:: images/Airliner-AudioPanel.jpg
-
-  X-Plane 11 audio controls in the Boeing 747-400 (Center Pedestal)
-
-Aircraft without a working audio panel
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-If your aircraft model doesn’t have a working transmission selector, you can use
-the ``.tx ?`` command to find out which radio is set to transmit, and use the 
-``.tx COM1`` or ``.tx COM2`` commands to change the active radio to send.
-
-Similarly, if your aircraft model’s audio panel doesn’t have proper receive 
-select controls you can use ``.rx COM1 on`` and ``.rx COM1 off`` (and similarly
-for COM2) to turn that audio source on and off.
-
-
-
-
-
+Setting up your Audio Devices
+-----------------------------

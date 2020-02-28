@@ -18,7 +18,7 @@
 # -- Project information -----------------------------------------------------
 
 project = 'XSquawkBox 2'
-copyright = '2019, The XSquawkBox Team'
+copyright = '2019-2020, The XSquawkBox Team'
 author = 'The XSquawkBox Team'
 master_doc = 'index'
 
