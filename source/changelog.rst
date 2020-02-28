@@ -4,7 +4,7 @@ XSquawkBox 2.0 Changelog
 For updates before 2.0, please refer to the README file included with the 
 release
 
-2.0 beta 6 (2020-02-xx)
+2.0 beta 6 (2020-02-29)
 =======================
 
  * Alas, another beta due to the two bugs (one major) dealt with in this

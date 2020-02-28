@@ -83,6 +83,44 @@ On macOS 10.15 (or newer), X-Plane 11.41 (or newer) is **required** for
 microphone support to work at all.  All versions of X-Plane 11 prior to 11.41
 are incompatible when used on macOS 10.14 or 10.15.
 
+On Releases and Updates
+-----------------------
+
+All XSquawkBox releases are only made through the `XSquawkBox website
+<http://xsb.xsquawkbox.net/>`_.  There is no automatic updater so you should 
+check the website regularly for news of known issues or upcoming updates.
+
+.. TIP:: 
+
+   XSquawkBox operates a twitter account (@xsquawkbox) which only contain tweets
+   about new articles on the website (such as development news, known issue
+   notices or release notifications).  This is a conveniant way to monitor for
+   XSquawkBox news without having to visit the site regularly.
+
+   We're open to using other methods we can integrate with our website as well!
+
+We have two types of release:
+
+ * Stable, which are versions we expect to continue to work for a prolonged
+   period
+
+ * Beta, which include new features which require testing before being declared
+   stable.
+
+Betas operate on a time limited basis and will automatically expire after a
+certain date which will be indicated in the ``README`` file included with the 
+release.
+
+Sometimes we screw up with our release process and need to supply a new build
+to address a compatibility issue - these are released as "hotfixes".
+
+Hotfixes never include new features or changes to XSquawkBox itself - they're
+always due to needing to change settings in our build system, either against
+XSquawkBox or one of it's dependencies.  If you have an older version of a 
+hotfixed release (e.g: You've got 2.0b4 and 2.0b4 hotfix 1 is out), and aren't
+experiencing any problems with it, then there's usually no need to update to the
+newer hotfix.
+
 X-Plane Performance Requirements
 --------------------------------
 In addition to the basic requirements, you must configure your X-Plane
