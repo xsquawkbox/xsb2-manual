@@ -20,6 +20,9 @@ WHAT'S NEW FOR THE 2.0 beta 6 RELEASE (2020-02-xx)
 
  * Report Voice server errors as a System Message so they're more obvious.
 
+ * Reenabled the use of ``xsquawkbox/input/string`` to pass input to other
+   plugins for processing.
+
  * Update to AFV-Native 0.9.5:
 
    * Fixed a bug where the reported audiable channels count wasn't initialised
