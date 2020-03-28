@@ -146,8 +146,7 @@ Using the Radio
 .. CAUTION::
 
    Even if you are familiar with XSquawkBox 1.x - please make sure to read this
-   section as some very important details have changed and there are some very
-   important work-arounds for legacy VATSIM bugs.
+   section as some very important details have changed.
 
 Unlike XSquawkbox 1, which could only send and receive text on COM1, and could 
 only transmit voice on COM1, XSquawkBox 2 makes full use of audio panel controls
@@ -162,19 +161,14 @@ VATSIM network currently does not.  You should only use 25Khz radio frequencies.
 
 .. NOTE::
 
-   There is a long standing bug in many ATC and Pilot clients that has resulted
-   in x.x25MHz and x.x75MHz  frequencies being reported in WhosOnline 
-   incorrectly as being x.x20MHz and x.x70MHz respectively (e.g: 119.725MHz will
-   show up incorrectly as 119.720MHz).
-
-   When you encounter these stations, you must tune the correct frequency 
-   not the frequency that appears in the list (ie: ending in 5, not with 0), to
-   hear and interact with them.
-
-   Unfortunately, we cannot work around this internally in XSquawkBox as the
-   text radio system and voice systems handle these cases differently, and any
-   such workaround will prevent 8.33Khz channels from being reported properly in
-   the future.
+   There is a long standing error in VATSIM usage with many ATC and Pilot
+   clients, and consequentially, users, reporting x.x25MHz and x.x75MHz 
+   frequencies incorrectly as being x.x20MHz and x.x70MHz respectively.
+   
+   XSquawkBox now corrects all usage of .x20 and .x70 to their correct 
+   frequencies.  This will cause some deviation from VATspy, or other tools, 
+   but you will get the correct behaviour when you tune the corrected 
+   frequency.
 
 Using Text
 ----------

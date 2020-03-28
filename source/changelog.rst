@@ -4,6 +4,27 @@ XSquawkBox 2.0 Changelog
 For updates before 2.0, please refer to the README file included with the 
 release
 
+2.0 (stable) (2020-03-29)
+=========================
+
+ * Fixed a cosmetic bug where XSB OSBs would register themselves as servicing
+   99.998MHz instead of VATSIM's standard 199.998MHz.
+
+ * We now mangle the malformed .x20 and .x70 frequencies to their correct form
+   when displayed, and normalise all frequency usage correctly for the
+   respective service.  Hopefully this ends the confusion over what to tune, and
+   radios not working as expected.
+
+ * Make sure that command-entered frequencies (// and ///) are rounded to 5khz
+   intervals.
+
+ * Verbosely report when we're connecting and disconnecting from VATSIM AFV
+   (Voice) as AFV service issues causing silent failures have been confusing
+   endusers.
+
+ * AFV-Native: Disable Nagle (where possible) on http connections per insistence
+   of the AFV team.
+ 
 2.0 beta 6 (2020-02-29)
 =======================
 
@@ -28,6 +49,12 @@ release
    * Fixed a bug where the reported audiable channels count wasn't initialised
      inbetween creating the radio simulation state, and the first network
      update.  (Cosmetic only)
+
+2.0 beta 5 hotfix 1 (2020-02-01)
+================================
+
+ * Reincorproate the fix from beta 4 hotfix 2 to not include AVX instructions
+   in the non-AVX execution paths.
 
 2.0 beta 5 (2020-02-01)
 =======================
@@ -64,6 +91,18 @@ release
 
  * Updated to AFV-Native 0.9.4 (build-chain and dependency version updates only)
 
+2.0 beta 4 hotfix 2 (2020-01-01)
+================================
+
+ * Fix a build issue with libopus that was producing AVX instructions in the
+   non-AVX execution paths on macOS and probably on Linux too.
+
+2.0 beta 4 hotfix 1 (2019-12-30)
+================================
+
+ * Fix a build issue with portaudio that produced a hard dependency on macOS
+   10.15
+ 
 2.0 beta 4 (2019-12-29)
 =======================
 

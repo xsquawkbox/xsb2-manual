@@ -226,7 +226,7 @@ The Software Product is licensed, not sold.
     services conflict with the terms of this EULA, the terms of this EULA shall
     control.
 
-Third Party Licenses (as of 2.0b4)
+Third Party Licenses (as of 2.0b6)
 ==================================
 
 notify.wav
@@ -236,7 +236,7 @@ under the CC0 license.
 
 AFV-Native
 ----------
-Copyright (c) 2019 Christopher Collins
+Copyright (c) 2019-2020 Christopher Collins
 
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are met:
