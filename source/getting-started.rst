@@ -83,6 +83,15 @@ On macOS 10.15 (or newer), X-Plane 11.41 (or newer) is **required** for
 microphone support to work at all.  All versions of X-Plane 11 prior to 11.41
 are incompatible when used on macOS 10.14 or 10.15.
 
+.. WARNING::
+
+   When using XSquawkBox on macOS 10.14 or newer, you should ensure that you 
+   have your Security & Privacy settings set to enable apps from Identified
+   Developers.
+
+   The XSquawkBox team cannot provide support for problems created by having
+   your application restrictions set too high.
+
 On Releases and Updates
 -----------------------
 
@@ -221,6 +230,11 @@ To install the plugin:
 
 3. Open or unzip the distribution zipfile, and then move the "XSquawkBox" folder
    from the XSquawkBox distribution into the Plugins folder.
+
+.. NOTE::
+
+   Do not attempt to directly open the `.xpl` files - you only need to put these
+   in the right location and X-Plane will load them automatically.
 
 Once this has been done, when you start up X-Plane and start a flight, you 
 should see a "XSquawkBox" menu item in the plugins menu.
