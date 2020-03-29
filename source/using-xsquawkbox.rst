@@ -170,6 +170,18 @@ VATSIM network currently does not.  You should only use 25Khz radio frequencies.
    but you will get the correct behaviour when you tune the corrected 
    frequency.
 
+Tuning via Commands
+-------------------
+
+XSquawkBox permits tuning the radio by issuing a `//` or `///` command in the
+text radio entry box.
+
+To tune COM1, you can enter `//<freq>` and that will tune the active COM1 
+frequency.  You can also use `//-<freq>` to tune the standby frequency.
+
+Similarly, for COM2, you can enter `///<freq>` and that will tune the active
+COM2 frequency.  You can also use `///-<freq>` to tune the standby frequency.
+
 Using Text
 ----------
 
