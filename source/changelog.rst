@@ -15,6 +15,11 @@ release
    respective service.  Hopefully this ends the confusion over what to tune, and
    radios not working as expected.
 
+ * We also now normalise the HF Alias list to ensure we match frequencies 
+   correctly due to the discovery that not only did our behaviour not match the
+   expected one for .x25/.x75 aliases, but the actual alias list itself
+   contained inconsistencies.
+
  * Make sure that command-entered frequencies (// and ///) are rounded to 5khz
    intervals.
 
