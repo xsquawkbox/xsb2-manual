@@ -173,14 +173,24 @@ VATSIM network currently does not.  You should only use 25Khz radio frequencies.
 Tuning via Commands
 -------------------
 
-XSquawkBox permits tuning the radio by issuing a `//` or `///` command in the
+XSquawkBox permits tuning the radio by issuing a ``//`` or ``///`` command in the
 text radio entry box.
 
-To tune COM1, you can enter `//<freq>` and that will tune the active COM1 
-frequency.  You can also use `//-<freq>` to tune the standby frequency.
+To tune COM1, you can enter ``//<freq>`` and that will tune the active COM1 
+frequency.  You can also use ``//-<freq>`` to tune the standby frequency.  For 
+example, entering ``//122.80`` will tune 122.800MHz on COM1.
 
-Similarly, for COM2, you can enter `///<freq>` and that will tune the active
-COM2 frequency.  You can also use `///-<freq>` to tune the standby frequency.
+Similarly, for COM2, you can enter ``///<freq>`` and that will tune the active
+COM2 frequency.  You can also use ``///-<freq>`` to tune the standby frequency.
+
+.. TIP::
+
+   XSquawkBox will deal with skipped trailing zeros, and, as of 2.0 (stable)
+   will set `.x2` and `.x7` to the correct channels whereas previous versions
+   would not.
+
+   e.g:  entering ``//119.27`` will tune 119.275MHz, and ``//132.8`` will tune
+         132.800MHz as expected.
 
 Using Text
 ----------
