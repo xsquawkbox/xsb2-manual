@@ -20,8 +20,8 @@ release
    expected one for .x25/.x75 aliases, but the actual alias list itself
    contained inconsistencies.
 
- * Make sure that command-entered frequencies (// and ///) are rounded to 5khz
-   intervals.
+ * Make sure that command-entered frequencies (``//`` and ``///``) are rounded
+   to valid channels.
 
  * Verbosely report when we're connecting and disconnecting from VATSIM AFV
    (Voice) as AFV service issues causing silent failures have been confusing
