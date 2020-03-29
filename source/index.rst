@@ -6,7 +6,7 @@
 Welcome to XSquawkBox 2's documentation!
 ========================================
 
-This manual is current as of 2.0 beta 6
+This manual is current as of 2.0
 
 .. toctree::
    :maxdepth: 2
