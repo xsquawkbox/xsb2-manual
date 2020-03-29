@@ -7,7 +7,7 @@ release
 2.0 (stable) (2020-03-29)
 =========================
 
- * Fixed a cosmetic bug where XSB OSBs would register themselves as servicing
+ * Fixed a cosmetic bug where XSB OBSs would register themselves as servicing
    99.998MHz instead of VATSIM's standard 199.998MHz.
 
  * We now mangle the malformed .x20 and .x70 frequencies to their correct form
@@ -23,7 +23,9 @@ release
    endusers.
 
  * AFV-Native: Disable Nagle (where possible) on http connections per insistence
-   of the AFV team.
+   of the AFV team.   This is expected to be zero net change as curl buffers 
+   HTTP requests properly, but will eliminate any edge-cases where the AFV 
+   servers delayed ACK can cause a short (200ms) delay in finishing a HTTP POST.
  
 2.0 beta 6 (2020-02-29)
 =======================
