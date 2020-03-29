@@ -189,8 +189,8 @@ COM2 frequency.  You can also use ``///-<freq>`` to tune the standby frequency.
    will set `.x2` and `.x7` to the correct channels whereas previous versions
    would not.
 
-   e.g:  entering ``//119.27`` will tune 119.275MHz, and ``//132.8`` will tune
-         132.800MHz as expected.
+   e.g:  entering ``//119.27`` or ``//119.270`` will tune 119.275MHz, and 
+         ``//132.8`` will tune 132.800MHz as expected.
 
 Using Text
 ----------
