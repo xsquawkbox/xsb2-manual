@@ -118,10 +118,10 @@ air traffic controllers identify you on their radar screens. The transponder
 transmits a four-digit code (often called a "squawk code") that identifies 
 your aircraft.
 
-The X-Plane transponder on your airplane's panel controls your squawk code as
-seen by air traffic control on the network. If you do not have a transponder on
-your plane's panel, you will not be able to change your transponder settings 
-and may not be allowed on the network.
+The transponder on your airplane's panel controls your squawk code as seen by
+air traffic control on the network. If you do not have a transponder on your
+plane's panel, you will not be able to change your transponder settings and may
+not be allowed on the network.
 
 .. TIP::
 
@@ -136,7 +136,7 @@ Use the transponder controls in your aircraft to toggle between standby and
 Mode C (Typically labelled ``ALT``, although in TCAS equipped aircraft with a 
 combined mode knob, the ``TA`` and ``TA/RA`` settings will also work).
 
-To put send an ident signal ("Squawk Ident"), click the 'ident' button on your
+To send an ident signal ("Squawk Ident"), click the 'ident' button on your 
 transponder on the x-plane panel with the mouse.  You should only do this as
 explicitly directed by ATC.
 
@@ -156,7 +156,7 @@ voice.
 Transmissions (both voice and text) will be sent to the selected 
 transmission radio.
 
-XSquawkBox 2 supports 8.33Khz tuning other both voice and text, although the
+XSquawkBox 2 supports 8.33Khz tuning over both voice and text, although the
 VATSIM network currently does not.  You should only use 25Khz radio frequencies.
 
 .. NOTE::
