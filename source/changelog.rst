@@ -1,8 +1,20 @@
-XSquawkBox 2.0 Changelog
+XSquawkBox 2.1 Changelog
 ************************
 
 For updates before 2.0, please refer to the README file included with the 
 release
+
+2.1 (2020-04-05)
+================
+
+ * Update to AFV-Native 1.1.0:
+
+   * Implement the new effects processing used in the .NET AFV.
+
+ * Fixed a bug where the Enable Effects checkbox in Setup Audio did nothing!
+   (It was persisted, and it toggled the internal flag, but we never actually
+    set the effects state in AFV-Native!)
+
 
 2.0 (stable) (2020-03-29)
 =========================

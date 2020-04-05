@@ -46,8 +46,8 @@ including the contents of ``Log.txt`` in full.
 
 .. _troubleshooting-audio-devices:
 
-Can't see your input/output device
-==================================
+Can't see your desired input/output device
+==========================================
 
 AFV-Native can only handle a specific subset of audio devices:
 
@@ -78,6 +78,8 @@ Some OS Specific notes on this are below:
 macOS
 ^^^^^
 
+macOS only supports one audio API - CoreAudio.
+
 Run the "Audio MIDI Setup" utility (usually in ``/Applications/Utilities``) and
 make sure the sampling rate for the device you want to use is set to 48KHz.
 Devices set to 44.1KHz (and presumably lower) will not be recognised as 
@@ -85,6 +87,10 @@ compatible.
 
 Windows
 ^^^^^^^
+
+Windows supports multiple audio APIs.  In terms of prefernce, it is recommended
+to use WASAPI first if possible, with the next preference being DirectSound, and
+the least preferred being WinMME.
 
 5.1 Surround speaker sets that connect directly to your PC via 3 x 3.5mm jacks
 have been known to not work with some integrated motherboard audio.  If you
@@ -111,3 +117,60 @@ To force the default sampling rate for a device:
     d. Click "OK" to close the device settings.
 
  5. Click "OK" to close the Sound control panel.
+
+Linux
+^^^^^
+
+Linux presently only supports the ALSA audio API.  
+
+Whilst it is possible to connect ALSA to Pulse, or to connect audio processing 
+that'll generally overcome any mismatch problems, no support can be offered for 
+the Linux distribution provided audio components by the XSquawkBox team.
+
+I'm Not Hearing Any Voice
+=========================
+
+The voice support has been fairly heavily tested - there have been a lot of
+problems reported that were traced through to incorrect operation or 
+compatibility issues.
+
+.. NOTE::
+
+   VATSIM has been suspending ATIS operation during periods of high activity.
+
+   A failure to receive voice ATIS is not an indication of problems with the
+   client unless you can confirm that other users are receiving voice ATIS.
+
+First, make sure you didn't get a warning message from XSB when you connected 
+that your audio devices weren't set up correctly.  If you did, you need to 
+disconnect and access the Audio Setup option and select your input and output
+devices.
+
+Next, check the aircraft compatibility information to see if there's a known 
+issue with the model you're using - you may need to vary how you're trying to
+use XSB or the aircraft if there's an identified issue.
+
+Once you've checked for known issues and compensated for any stated,
+ensure you have set the right frequency on the radio, using the panel controls
+only.  (If already correctly set, set the radio away from the desired frequency,
+then back again).
+
+If that doesn't resolve the issue, next ensure you have set the radio to be
+enabled for receive on the audio panel.  Use the ``.rx`` command to force enable
+it and see if that makes any difference.
+
+Next, Adjust the radio's independant volume control and make sure it's turned
+up.
+
+Finally, if you've exhausted all of those options, and it's still not working,
+disconnect and access audio setup - and make sure the audio device selected
+is the one you are actually using.  Check that the peak meter moves when you
+speak into your microphone.
+
+I hear myself when I transmit voice
+===================================
+
+This is almost always caused by having both radios tuned to the same frequency,
+and both set with Rx Enabled.
+
+Disable the non-transmitting radio for receive, or change it's frequency.

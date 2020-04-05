@@ -6,7 +6,7 @@
 Welcome to XSquawkBox 2's documentation!
 ========================================
 
-This manual is current as of 2.0
+This manual is current as of 2.1
 
 .. toctree::
    :maxdepth: 2
@@ -17,6 +17,7 @@ This manual is current as of 2.0
    getting-started
    using-xsquawkbox
    tuning-xplane
+   aircraft-compatibility
    troubleshooting
    technical-notes
    license
