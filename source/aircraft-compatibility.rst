@@ -140,6 +140,15 @@ IXEG
 --------------------------
 * Independent COM volumes not rigged.
 
+JAR Design
+==========
+
+A330-241 (v1.2r3) - XP10
+------------------------
+* 3D panel only permits one RX Enabled at a time.
+* Tx Select not rigged.
+* Individual COM volumes not rigged.
+
 Leading Edge Simulations
 ========================
 
