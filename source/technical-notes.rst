@@ -7,6 +7,12 @@ Introduction
 This section of the manual is dedicated to technical information about the
 internals of XSquawkBox to aid debugging and integration.
 
+.. WARNING::
+
+   If you are not a software developer looking to solve problems with 
+   AFV-Native, or to develop a plugin that interfaces with XSquawkBox, the 
+   inforamtion in this section of the manual will not likely be of use to you.
+
 Audio
 =====
 
