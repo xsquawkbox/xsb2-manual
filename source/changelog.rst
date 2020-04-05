@@ -13,7 +13,7 @@ release
 
  * Fixed a bug where the Enable Effects checkbox in Setup Audio did nothing!
    (It was persisted, and it toggled the internal flag, but we never actually
-    set the effects state in AFV-Native!)
+   set the effects state in AFV-Native!)
 
 
 2.0 (stable) (2020-03-29)
